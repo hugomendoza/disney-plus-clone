@@ -1,8 +1,9 @@
 :root {
-  --primary-font: "Sen", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary-font: "Lato", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --white: #ffffff;
   --black: #000000;
   --blue: #0058e1;
+  --red: #F43F5E;
 }
 
 html {
@@ -14,6 +15,8 @@ html {
   scroll-behavior: smooth;
 
   font-size: clamp(0.875rem, 0.2vw + 0.9rem, 1.10rem);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 * {
