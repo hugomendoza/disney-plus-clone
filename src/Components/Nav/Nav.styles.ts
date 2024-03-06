@@ -10,6 +10,7 @@ export const StyledNav = styled.nav.attrs({
   display: flex;
   align-items: center;
   padding: 1rem;
+  margin-bottom: 1.5rem;
 
   .WrapperLogo {
     margin-right: 1.5rem;
