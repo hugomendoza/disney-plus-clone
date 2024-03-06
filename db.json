@@ -1,58 +1,56 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "usuario1",
       "mail": "test1@gmail.com",
       "avatar": "https://randomuser.me/api/portraits/lego/1.jpg",
-      "password": "123456"
+      "password": "123456",
+      "allowedCategories": ["1", "2", "3", "5"]
     },
     {
       "id": 2,
       "name": "usuario2",
       "mail": "test2@gmail.com",
       "avatar": "https://randomuser.me/api/portraits/lego/2.jpg",
-      "password": "123456"
+      "password": "123456",
+      "allowedCategories": ["1", "2", "4"]
     },
     {
       "id": 3,
       "name": "usuario3",
       "mail": "test3@gmail.com",
       "avatar": "https://randomuser.me/api/portraits/lego/3.jpg",
-      "password": "123456"
+      "password": "123456",
+      "allowedCategories": ["1", "3", "4", "5"]
     }
   ],
 
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "disney",
-      "slug": "disney",
-      "userId": [1, 2, 3]
+      "slug": "disney"
     },
     {
-      "id": 2,
+      "id": "2",
       "slug": "pixar",
-      "name": "pixar",
-      "userId": [1 ,3]
+      "name": "pixar"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "marvel",
-      "slug": "marvel",
-      "userId": [2, 3]
+      "slug": "marvel"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Star Wars",
-      "slug": "star-wars",
-      "userId": [1, 2]
+      "slug": "star-wars"
     },
     {
-      "id": 4,
+      "id": "5",
       "name": "National Geographic",
-      "slug": "national-geographic",
-      "userId": [1,3]
+      "slug": "national-geographic"
     }
   ],
 
@@ -63,7 +61,7 @@
       "slug": "hercules",
       "title": "Hércules",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 1,
+      "categoryId": "1",
       "image": "https://hips.hearstapps.com/hmg-prod/images/hercules-disney-pelicula-1667464184.jpg",
       "video": "i-9lisp2Gak"
     },
@@ -72,7 +70,7 @@
       "slug": "la-bella-durmiente",
       "title": "La Bella Durmiente",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 1,
+      "categoryId": "1",
       "image": "https://images-1.rakuten.tv/storage/snapshot/shot/423413de-42b0-4184-9d45-0f7a9f6750af-snapshot-1590666325-width936-quality90.jpeg",
       "video": "3D8ZtKRa5Bs"
     },
@@ -99,7 +97,7 @@
       "slug": "el-planeta-del-tesoro-2",
       "title": "El Planeta del Tesoro-2",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 1,
+      "categorieId": "1",
       "image": "https://2.bp.blogspot.com/-2RNu4IubU10/W5KOLWxuqlI/AAAAAAAAoRw/NF9gosJVE0w_BeqSV366llRVEKVM_5MfwCLcBGAs/s1600/John%2BSilver%2By%2BJim%2BHawkins%2Ben%2BEl%2Bplaneta%2Bdel%2Btesoro%2B-%2BCine%2Bde%2BEscritor.png",
       "trailer": "uokpV_AkQAc"
     },

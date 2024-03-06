@@ -1,10 +1,11 @@
-import { ContentCategory, ContentDetails, HomePage, LoginPage } from './Pages'
+import { BrowserRouter } from 'react-router-dom'
+import { AppRouter } from './router'
 
 const DisneyApp = () => {
   return (
-    <>
-      <ContentDetails />
-    </>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   )
 }
 
