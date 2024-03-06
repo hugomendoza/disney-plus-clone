@@ -13,7 +13,7 @@ export const StyledLogo = styled.img.attrs({
   className: 'StyledLogo'
 })<PropsLogo>`
   width: ${props => ({
-    small: '3rem',
+    small: '4.5rem',
     medium: '9rem'
   }[props.size])};
 `
