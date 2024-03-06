@@ -3,8 +3,7 @@ import styled from 'styled-components'
 export const CarouselItem = styled.a.attrs({
   className: 'CarouselItem'
 })`
-  width: 100%;
-  height: 32rem;
+  aspect-ratio: 16 / 5;
   position: relative;
   padding: 0 1rem;
   color: white;
