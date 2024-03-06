@@ -4,8 +4,8 @@ export interface PropsLogo {
   size: 'small' | 'medium'
 }
 
-export const WarpperLogo = styled.figure.attrs({
-  className: 'WarpperLogo'
+export const WrapperLogo = styled.figure.attrs({
+  className: 'WrapperLogo'
 })`
 `
 

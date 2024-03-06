@@ -1,13 +1,13 @@
-import { PropsLogo, StyledLogo, WarpperLogo } from './LogoDisney.styles'
+import { PropsLogo, StyledLogo, WrapperLogo } from './LogoDisney.styles'
 import { logoDisney } from '@/assets/img'
 
 export const LogoDisney = ({size}:PropsLogo) => {
   return (
-    <WarpperLogo>
+    <WrapperLogo>
       <StyledLogo
         size={size}
         src={logoDisney}
       />
-    </WarpperLogo>
+    </WrapperLogo>
   )
 }

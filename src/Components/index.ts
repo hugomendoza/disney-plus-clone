@@ -1,3 +1,5 @@
 export * from './Button/Button'
+export * from './Hero/Hero'
 export * from './Inputs/Inputs'
 export * from './LogoDisney/LogoDisney'
+export * from './Nav/Nav'
