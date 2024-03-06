@@ -1,9 +1,9 @@
-import { ContentCategory, HomePage, LoginPage } from './Pages'
+import { ContentCategory, ContentDetails, HomePage, LoginPage } from './Pages'
 
 const DisneyApp = () => {
   return (
     <>
-      <ContentCategory />
+      <ContentDetails />
     </>
   )
 }
