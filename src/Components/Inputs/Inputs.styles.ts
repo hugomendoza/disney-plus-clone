@@ -38,5 +38,6 @@ export const ErrorMessage = styled.p.attrs({
   className: 'ErrorMessage'
 })`
   color: var(--red);
-  font-size: 1rem;
+  font-size: 0.85rem;
+  margin-top: -0.75rem;
 `

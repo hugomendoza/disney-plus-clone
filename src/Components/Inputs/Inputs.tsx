@@ -18,6 +18,7 @@ interface Props {
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void
   error?: boolean
   errorMessage?: string
+  required?: boolean
 }
 
 export const Inputs = (props: Props): JSX.Element => {
@@ -31,7 +32,8 @@ export const Inputs = (props: Props): JSX.Element => {
     error,
     errorMessage,
     icon,
-    onBlur
+    onBlur,
+    required
   } = props
 
   return (
@@ -47,6 +49,7 @@ export const Inputs = (props: Props): JSX.Element => {
         onChange={onChange}
         name={name}
         onBlur={onBlur}
+        required={required}
       />
       {icon}
       {error === true && <ErrorMessage>{errorMessage}</ErrorMessage>}

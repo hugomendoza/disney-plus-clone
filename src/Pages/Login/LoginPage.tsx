@@ -1,7 +1,34 @@
+import { useForm, useAuthStore } from '@/hooks'
 import { Button, Inputs, LogoDisney } from '@/Components'
 import { FormLogin, TitleForm, WrapperLogin } from './LoginPage.styles'
 
 export const LoginPage = () => {
+  const loginFields = {
+    email: '',
+    password: ''
+  }
+
+  const { errors, startLogin, setErrors, validateForm } = useAuthStore()
+  const {
+    email,
+    password,
+    onInputChange
+  } = useForm(loginFields)
+
+  const loginSubmit = (event:React.ChangeEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const validationErrors = validateForm(email, password)
+    if (Object.keys(validationErrors).length === 0) {
+      startLogin({ email, password })
+      setErrors({
+        email: '',
+        password: ''
+      })
+    } else {
+      setErrors(validationErrors)
+    }
+  }
+
   return (
     <WrapperLogin>
 
@@ -9,7 +36,7 @@ export const LoginPage = () => {
         size='medium'
       />
 
-      <FormLogin>
+      <FormLogin onSubmit={loginSubmit} noValidate>
         <TitleForm>
           Ingresa tus datos para continuar
         </TitleForm>
@@ -18,16 +45,20 @@ export const LoginPage = () => {
           name='email'
           type='email'
           placeholder='Ingresa tu correo'
-          value=''
-          onChange={() => {}}
+          value={email}
+          onChange={onInputChange}
+          error={errors.email !== ''}
+          errorMessage={errors.email}
         />
         <Inputs
           label='Contraseña'
           name='password'
           type='password'
           placeholder='Ingresa tu contraseña'
-          value=''
-          onChange={() => {}}
+          value={password}
+          onChange={onInputChange}
+          error={errors.password !== ''}
+          errorMessage={errors.password}
         />
         <Button
           value='Continuar'
