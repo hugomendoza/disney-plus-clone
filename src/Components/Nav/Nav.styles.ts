@@ -32,6 +32,14 @@ export const WrapperLinks = styled.ul.attrs({
       color: var(--white);
       text-transform: uppercase;
       font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      font-weight: 300;
     }
   }
 `
