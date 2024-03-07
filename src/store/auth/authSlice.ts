@@ -1,10 +1,9 @@
-import { PropsAuth } from '@/types/types'
 import { createSlice } from '@reduxjs/toolkit'
+import { PropsAuth } from '@/types/types'
 
 const initialState:PropsAuth = {
   status: 'not-authenticated',
-  user: {},
-  errorMessage: ''
+  user: {}
 }
 
 export const authSlice = createSlice({
@@ -18,11 +17,8 @@ export const authSlice = createSlice({
     onLogout: (state) => {
       state.status = 'not-authenticated'
       state.user = initialState.user
-    },
-    catchError: (state, { payload }) => {
-      state.errorMessage = payload
     }
   }
 })
 
-export const { onLogin, onLogout, catchError } = authSlice.actions
+export const { onLogin, onLogout } = authSlice.actions

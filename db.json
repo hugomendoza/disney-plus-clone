@@ -43,27 +43,32 @@
     {
       "id": "1",
       "name": "disney",
-      "slug": "disney"
+      "slug": "disney",
+      "logo": "disney"
     },
     {
       "id": "2",
       "slug": "pixar",
-      "name": "pixar"
+      "name": "pixar",
+      "logo": "pixar"
     },
     {
       "id": "3",
       "name": "marvel",
-      "slug": "marvel"
+      "slug": "marvel",
+      "logo": "marvel"
     },
     {
       "id": "4",
       "name": "Star Wars",
-      "slug": "star-wars"
+      "slug": "star-wars",
+      "logo": "starWars"
     },
     {
       "id": "5",
       "name": "National Geographic",
-      "slug": "national-geographic"
+      "slug": "national-geographic",
+      "logo": "nationalGeographic"
     }
   ],
   "movies": [
@@ -74,7 +79,8 @@
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
       "categoryId": "1",
       "image": "https://hips.hearstapps.com/hmg-prod/images/hercules-disney-pelicula-1667464184.jpg",
-      "video": "i-9lisp2Gak"
+      "video": "i-9lisp2Gak",
+      "premier": true
     },
     {
       "id": "2",
@@ -83,214 +89,238 @@
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
       "categoryId": "1",
       "image": "https://images-1.rakuten.tv/storage/snapshot/shot/423413de-42b0-4184-9d45-0f7a9f6750af-snapshot-1590666325-width936-quality90.jpeg",
-      "video": "3D8ZtKRa5Bs"
+      "video": "3D8ZtKRa5Bs",
+      "premier": false
     },
     {
       "id": "3",
       "slug": "el-planeta-del-tesoro",
       "title": "El Planeta del Tesoro",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 1,
+      "categoryId": "1",
       "image": "https://2.bp.blogspot.com/-2RNu4IubU10/W5KOLWxuqlI/AAAAAAAAoRw/NF9gosJVE0w_BeqSV366llRVEKVM_5MfwCLcBGAs/s1600/John%2BSilver%2By%2BJim%2BHawkins%2Ben%2BEl%2Bplaneta%2Bdel%2Btesoro%2B-%2BCine%2Bde%2BEscritor.png",
-      "trailer": "uokpV_AkQAc"
+      "trailer": "uokpV_AkQAc",
+      "premier": false
     },
     {
       "id": "4",
       "slug": "grandes-heroes",
       "title": "Grandes Héroes",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 1,
+      "categoryId": "1",
       "image": "https://cdn.milenio.com/uploads/media/2014/10/28/heroes-buscaran-salvar-ciudad-san.jpeg",
-      "trailer": "gZgre_WKDuk"
+      "trailer": "gZgre_WKDuk",
+      "premier": false
     },
     {
       "id": "5",
       "slug": "el-planeta-del-tesoro-2",
       "title": "El Planeta del Tesoro-2",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categorieId": "1",
+      "categoryId": "1",
       "image": "https://2.bp.blogspot.com/-2RNu4IubU10/W5KOLWxuqlI/AAAAAAAAoRw/NF9gosJVE0w_BeqSV366llRVEKVM_5MfwCLcBGAs/s1600/John%2BSilver%2By%2BJim%2BHawkins%2Ben%2BEl%2Bplaneta%2Bdel%2Btesoro%2B-%2BCine%2Bde%2BEscritor.png",
-      "trailer": "uokpV_AkQAc"
+      "trailer": "uokpV_AkQAc",
+      "premier": false
     },
     {
       "id": "6",
       "slug": "elementos",
       "title": "Elementos",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 2,
+      "categoryId": "2",
       "image": "https://co.web.img2.acsta.net/r_654_368/img/40/93/40930934d13897d6789bc3e50da0a9f7.jpeg",
-      "trailer": "7KIWqmLsJRM"
+      "trailer": "7KIWqmLsJRM",
+      "premier": false
     },
     {
       "id": "7",
       "slug": "coco",
       "title": "Coco",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 2,
+      "categoryId": "2",
       "image": "https://i.blogs.es/de8d66/coco-guitarra/1366_2000.jpeg",
-      "trailer": "awzWdtCezDo"
+      "trailer": "awzWdtCezDo",
+      "premier": false
     },
     {
       "id": "8",
       "slug": "intensamente",
       "title": "Intensamente",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 2,
+      "categoryId": "2",
       "image": "https://cinefilosoficial.com/wp-content/uploads/2023/11/intensamente.cinefilos-750x375.jpg",
-      "trailer": "_DTnvFdFW14"
+      "trailer": "_DTnvFdFW14",
+      "premier": true
     },
     {
       "id": "9",
       "slug": "red",
       "title": "Red",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 2,
+      "categoryId": "2",
       "image": "https://media.vogue.mx/photos/6230c22c4dca695e5156c684/4:3/w_2100,h_1575,c_limit/red-pelicula-de-disney.jpg",
-      "trailer": "upGoAejd7LM"
+      "trailer": "upGoAejd7LM",
+      "premier": false
     },
     {
       "id": "10",
       "slug": "coco-2",
       "title": "Coco 2",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 2,
+      "categoryId": "2",
       "image": "https://i.blogs.es/de8d66/coco-guitarra/1366_2000.jpeg",
-      "trailer": "awzWdtCezDo"
+      "trailer": "awzWdtCezDo",
+      "premier": false
     },
     {
       "id": "11",
       "slug": "iron-man",
       "title": "Iron Man",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 3,
+      "categoryId": "3",
       "image": "https://www.quever.news/u/fotografias/m/2020/9/7/f768x1-990_1117_5022.jpg",
-      "trailer": "8ugaeA-nMTc"
+      "trailer": "8ugaeA-nMTc",
+      "premier": false
     },
     {
       "id": "12",
       "slug": "thor",
       "title": "Thor",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 3,
+      "categoryId": "3",
       "image": "https://cdn.colombia.com/sdi/2022/08/09/thor-love-and-thunder-fecha-de-estreno-disney-plus-marvel-studios-1055520.jpg",
-      "trailer": "JOddp-nlNvQ"
+      "trailer": "JOddp-nlNvQ",
+      "premier": false
     },
     {
       "id": "13",
       "slug": "avengers",
       "title": "Avengers",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 3,
+      "categoryId": "3",
       "image": "https://www.latercera.com/resizer/TDyZ-9KOpTxaSAoHsVexvN1HmaY=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/I5SBUJNKTFE2XGL6I5FGRUD5GY.jpg",
-      "trailer": "6ZfuNTqbHE8"
+      "trailer": "6ZfuNTqbHE8",
+      "premier": true
     },
     {
       "id": "14",
       "slug": "eternals",
       "title": "Eternals",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 3,
+      "categoryId": "3",
       "image": "https://elcomercio.pe/resizer/ytzf2hipJdv9AtodRKqP4ncCKR0=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/MCZGODYJWRF4RJRZ2LOMW4RPWM.jpg",
-      "trailer": "v1EkoQV4g5c"
+      "trailer": "v1EkoQV4g5c",
+      "premier": false
     },
     {
       "id": "15",
       "slug": "avengers-2",
       "title": "Avengers 2",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 3,
+      "categoryId": "3",
       "image": "https://www.latercera.com/resizer/TDyZ-9KOpTxaSAoHsVexvN1HmaY=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/I5SBUJNKTFE2XGL6I5FGRUD5GY.jpg",
-      "trailer": "6ZfuNTqbHE8"
+      "trailer": "6ZfuNTqbHE8",
+      "premier": false
     },
     {
       "id": "16",
       "slug": "star-wars-episode-iv",
       "title": "Episode IV",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 4,
+      "categoryId": "4",
       "image": "https://www.fayerwayer.com/resizer/5hoxJYfauGka8PwbUwFQrueY-aY=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/HZWKWR22XVAWLF6IGLF5JI4W4Y.jpg",
-      "trailer": "vZ734NWnAHA"
+      "trailer": "vZ734NWnAHA",
+      "premier": false
     },
     {
       "id": "17",
       "slug": "star-wars-episode-v",
       "title": "Episode V",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 4,
+      "categoryId": "4",
       "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/04/162075-darth-vader-saldra-rogue-one-star-wars-story.jpg?tf=1200x675",
-      "trailer": "JNwNXF9Y6kY"
+      "trailer": "JNwNXF9Y6kY",
+      "premier": false
     },
     {
       "id": "18",
       "slug": "star-wars-episode-vi",
       "title": "Episode VI",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 4,
+      "categoryId": "4",
       "image": "https://static1.srcdn.com/wordpress/wp-content/uploads/2023/02/darth-vader-star-wars-luke-skywalker.jpg",
-      "trailer": "RwUQH7SgkEc"
+      "trailer": "RwUQH7SgkEc",
+      "premier": false
     },
     {
       "id": "19",
       "slug": "star-wars-episode-vii",
       "title": "Episode VII",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 4,
+      "categoryId": "4",
       "image": "https://www.mubis.es/media/users/3724/139681/debate-kylo-ren-que-tal-os-ha-parecido-el-personaje-que-esperais-de-el-etc-original.jpg",
-      "trailer": "erLk59H86ww"
+      "trailer": "erLk59H86ww",
+      "premier": true
     },
     {
       "id": "20",
       "slug": "star-wars-episode-viii",
       "title": "Episode VIII",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 4,
+      "categoryId": "4",
       "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/04/162075-darth-vader-saldra-rogue-one-star-wars-story.jpg?tf=1200x675",
-      "trailer": "JNwNXF9Y6kY"
+      "trailer": "JNwNXF9Y6kY",
+      "premier": false
     },
     {
       "id": "21",
       "slug": "the-flood",
       "title": "The Flood",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 5,
+      "categoryId": "5",
       "image": "https://disneytips.com/wp-content/uploads/2022/09/flooding-near-walt-disney-world-620x330.jpg",
-      "trailer": "D9xFFyUOpXo"
+      "trailer": "D9xFFyUOpXo",
+      "premier": false
     },
     {
       "id": "22",
       "slug": "el-arca-de-las-jirafas",
       "title": "El Arca de las Jirafas",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 5,
+      "categoryId": "5",
       "image": "https://t2.ea.ltmcdn.com/es/posts/1/1/5/donde_viven_las_jirafas_26511_600.webp",
-      "trailer": "xNA5ntVXk84"
+      "trailer": "xNA5ntVXk84",
+      "premier": false
     },
     {
       "id": "23",
       "slug": "free-solo",
       "title": "Free Solo",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 5,
+      "categoryId": "5",
       "image": "https://media.revistagq.com/photos/5ca5f0384c7adb47ed00d159/master/w_1600%2Cc_limit/free_solo_documental_2826.jpg",
-      "trailer": "urRVZ4SW7WU"
+      "trailer": "urRVZ4SW7WU",
+      "premier": true
     },
     {
       "id": "24",
       "slug": "torn",
       "title": "Torn",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 5,
+      "categoryId": "5",
       "image": "https://www.infobae.com/new-resizer/aJHTv8NfeOX5kZUOYV39yS15OYY=/1200x900/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/QE2BABUERVC2PCQX5JCRG6OVFE.webp",
-      "trailer": "yWzuqiSeAoE"
+      "trailer": "yWzuqiSeAoE",
+      "premier": false
     },
     {
       "id": "25",
       "slug": "free-solo-2",
       "title": "Free Solo 2",
       "synopsis": "Laborum consectetur anim aliquip eiusmod minim officia nulla veniam ex proident cillum pariatur mollit. Officia ex pariatur esse do dolor consectetur incididunt mollit pariatur exercitation. Qui nulla ad esse proident velit voluptate ullamco nisi irure nostrud in minim adipisicing ut. Do fugiat consectetur officia voluptate occaecat commodo commodo nulla laboris sint voluptate commodo enim. Incididunt magna voluptate ad et nulla aliquip commodo incididunt non sint magna non culpa sit. Nulla adipisicing id sunt deserunt enim non et qui enim velit mollit laborum enim. Exercitation aute laboris irure deserunt dolor anim id ad sint do incididunt mollit labore.",
-      "categoryId": 5,
+      "categoryId": "5",
       "image": "https://media.revistagq.com/photos/5ca5f0384c7adb47ed00d159/master/w_1600%2Cc_limit/free_solo_documental_2826.jpg",
-      "trailer": "urRVZ4SW7WU"
+      "trailer": "urRVZ4SW7WU",
+      "premier": false
     }
   ]
 }

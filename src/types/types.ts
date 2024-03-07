@@ -8,13 +8,36 @@ export interface User {
   allowedCategories?: string[];
 }
 
+export interface Category {
+  id?: string;
+  name?: string;
+  slug?: string;
+  logo?: string;
+}
+
+export interface Movie {
+  id?: string;
+  slug?: string;
+  title?: string;
+  synopsis?: string;
+  categoryId?: string;
+  image?: string;
+  video?: string;
+  premier?: boolean;
+  trailer?: string;
+}
+
 export interface PropsAuth {
-  status: AuthStatus
-  user: User
-  errorMessage?: string
+  status: AuthStatus;
+  user: User;
 }
 
 export interface UserLogin {
   accessToken?: string;
   user?: User;
+}
+
+export interface LoadContentState {
+  categories: Category[];
+  movies: Movie[];
 }

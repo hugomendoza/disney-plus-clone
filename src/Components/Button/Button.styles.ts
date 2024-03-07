@@ -14,7 +14,11 @@ export const StyledButton = styled.button.attrs({
   font-family: var(--primary-font);
   transition: all 0.2s ease-in-out;
 
-  &:hover {
+  &::hover {
     filter: brightness(1.3);
+  }
+
+  &:disabled {
+    background-color: var(--dark-gray);
   }
 `

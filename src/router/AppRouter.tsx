@@ -24,12 +24,11 @@ export const AppRouter = () => {
             <>
               <Route path='/' element={<HomePage />} />
               <Route path='/brand/:slug' element={<ContentCategory />} />
-              <Route path='/category/:slug' element={<ContentDetails />} />
+              <Route path='/movie/:id' element={<ContentDetails />} />
               <Route path='/*' element={<Navigate to='/' />} />
             </>
           )
       }
-      <Route path='/*' element={<Navigate to='/auth/login' />} />
     </Routes>
   )
 }

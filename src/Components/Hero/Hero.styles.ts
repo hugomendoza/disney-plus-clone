@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-export const CarouselItem = styled.a.attrs({
+export const CarouselItem = styled(Link).attrs({
   className: 'CarouselItem'
 })`
   aspect-ratio: 16 / 5;

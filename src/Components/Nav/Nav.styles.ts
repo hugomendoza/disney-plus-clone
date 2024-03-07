@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export interface PropsUser {
-  isOpen: boolean
+  $show: boolean
 }
 
 export const StyledNav = styled.nav.attrs({
@@ -52,7 +52,7 @@ export const WrapperZoneUser = styled.div.attrs({
     bottom: -1rem ;
     transform: translateY(100%);
     right: 0;
-    display: ${props => props.isOpen ? 'block' : 'none'};
+    display: ${props => props.$show ? 'block' : 'none'};
   }
 `
 

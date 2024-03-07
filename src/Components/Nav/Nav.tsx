@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import { Button } from '../Button/Button'
 import { LogoDisney } from '../LogoDisney/LogoDisney'
-import { AvatarImage, AvatarZone,
+import {
+  AvatarImage,
+  AvatarZone,
   StyledNav,
   WrapperLinks,
   WrapperZoneUser
 } from './Nav.styles'
 
 export const Nav = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [showButton, setShowButton] = useState<boolean>(false)
 
   return (
     <StyledNav>
@@ -28,8 +30,8 @@ export const Nav = () => {
         </li>
       </WrapperLinks>
       <WrapperZoneUser
-        isOpen={isOpen}
-        onClick={() => setIsOpen(!isOpen)}
+        $show={showButton}
+        onClick={() => setShowButton(!showButton)}
       >
         <AvatarZone>
           <span>Huginho</span>

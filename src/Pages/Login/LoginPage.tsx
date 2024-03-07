@@ -8,7 +8,14 @@ export const LoginPage = () => {
     password: ''
   }
 
-  const { errors, startLogin, setErrors, validateForm } = useAuthStore()
+  const {
+    checking,
+    errors,
+    startLogin,
+    setErrors,
+    validateForm
+  } = useAuthStore()
+
   const {
     email,
     password,
@@ -64,6 +71,7 @@ export const LoginPage = () => {
           value='Continuar'
           type='submit'
           onClick={() => {}}
+          disabled={checking}
         />
       </FormLogin>
 

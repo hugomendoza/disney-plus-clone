@@ -1,4 +1,9 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+
+interface ProsGrid {
+  cols: number
+}
 
 export const HomeSection = styled.section.attrs({
   className: 'HomeSection'
@@ -8,13 +13,15 @@ export const HomeSection = styled.section.attrs({
 
 export const WrapperCards = styled.div.attrs({
   className: 'WrapperCards'
-})`
+})<ProsGrid>`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(${({cols}) => cols}, 1fr);
   gap: 1rem;
+  margin-inline: auto;
+  width: min(1280px, 90%);
 `
 
-export const CardCategory = styled.a.attrs({
+export const CardCategory = styled(Link).attrs({
   className: 'CardCategory'
 })`
   display: grid;
@@ -26,7 +33,8 @@ export const CardCategory = styled.a.attrs({
   transition: all 0.2s ease-in-out;
   
   img {
-    max-height: 3.5rem;
+    max-width: 8ch;
+    max-height: 2rem;
   }
 
   &:hover {

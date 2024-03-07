@@ -17,6 +17,7 @@ export const useAuthStore = () => {
   const dispatch = useAppDispatch()
 
   const [errors, setErrors] = useState<FormErrors>({})
+  const [checking, setChecking] = useState<boolean>(false)
 
   const validateForm = (email: string, password: string) => {
     const errors:FormErrors = {}
@@ -38,22 +39,24 @@ export const useAuthStore = () => {
   }
 
   const startLogin = async ({email, password}:FormErrors) => {
+    setChecking(true)
     try {
       const { data: { user } } = await api.post<UserLogin>('/login', {email, password})
       dispatch(onLogin(user))
     } catch (error) {
-      console.log(error)
       Toastify({
         text: 'Error al iniciar sesión, verifica tus credenciales',
         duration: 3000,
         close: true,
         gravity: 'top',
         position: 'right',
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        stopOnFocus: true,
         style: {
           background: 'red'
         }
       }).showToast()
+    } finally {
+      setChecking(false)
     }
   }
 
@@ -66,6 +69,7 @@ export const useAuthStore = () => {
     status,
     user,
     errors,
+    checking,
     setErrors,
 
     //* Methods

@@ -1,6 +1,10 @@
+import { Nav } from '@/Components'
 
-export const Layout = () => {
+export const Layout = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
   return (
-    <div>Layout</div>
+    <>
+      <Nav />
+      { children }
+    </>
   )
 }
