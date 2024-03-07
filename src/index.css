@@ -4,7 +4,8 @@
   --black: #000000;
   --blue: #0058e1;
   --red: #F43F5E;
-  --dark-gray: #2e2f3b
+  --dark-gray: #2e2f3b;
+  --white-contrast: #000000;
 }
 
 html {

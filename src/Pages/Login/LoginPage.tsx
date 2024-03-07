@@ -68,6 +68,7 @@ export const LoginPage = () => {
           errorMessage={errors.password}
         />
         <Button
+          $variant='blue'
           value='Continuar'
           type='submit'
           onClick={() => {}}

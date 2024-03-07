@@ -16,10 +16,11 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { logosBrand } from '@/helpers/logosBrand'
 import { Movie } from '@/types/types'
+import { Loader } from '@/Components'
 
 export const ContentCategory = () => {
   const { id } = useParams()
-  const { dataCategories, getMovieByCategories } = useGetMovieByCategory()
+  const { dataCategories, loading, getMovieByCategories } = useGetMovieByCategory()
 
   const { logo, name, movies } = dataCategories
 
@@ -38,6 +39,12 @@ export const ContentCategory = () => {
     getMovieByCategories(id!)
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
+
+  if (loading) {
+    return (
+      <Loader />
+    )
+  }
 
   return (
     <Layout>
@@ -62,6 +69,7 @@ export const ContentCategory = () => {
                 <img
                   src={image}
                   alt={title}
+                  loading='lazy'
                 />
               </CardMovie>
             ))

@@ -1,6 +1,6 @@
-import { StyledButton } from './Button.styles'
+import { PropsButton, StyledButton } from './Button.styles'
 
-interface Props {
+interface Props extends PropsButton {
   value: string
   type: 'button' | 'submit'
   disabled?: boolean
@@ -12,11 +12,13 @@ export const Button = (props: Props): JSX.Element => {
     value,
     type,
     disabled,
+    $variant,
     onClick
   } = props
 
   return (
     <StyledButton
+      $variant={$variant}
       type={type}
       onClick={onClick}
       disabled={disabled}

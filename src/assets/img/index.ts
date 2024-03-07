@@ -5,6 +5,8 @@ import marvel from './logo-marvel.png'
 import nationalGeographic from './logo-national-geographic.png'
 import pixar from './logo-pixar.png'
 import starWars from './logo-star-wars.png'
+import imax from './imax.webp'
+import age from './age.webp'
 
 export {
   bgLoginDisney,
@@ -13,5 +15,7 @@ export {
   marvel,
   nationalGeographic,
   pixar,
-  starWars
+  starWars,
+  imax,
+  age
 }
