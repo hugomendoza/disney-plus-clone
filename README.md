@@ -56,19 +56,20 @@ El comando `npm run dev` inicializa simultaneamente el API y sus endpoints junto
 #### URLs de consulta
 
 ```http
-   GET http://localhost:3001/users
-   GET http://localhost:3001/categories
-   GET http://localhost:3001/movies
+    GET http://localhost:3001/users
+    GET http://localhost:3001/categories
+    GET http://localhost:3001/movies
 ```
 
-#### Ejemplo de solicitud para validación de usuario
+#### Url para validación de usuario
 ```http
-   POST http://localhost:3001/login
+    POST http://localhost:3001/login
 ```
 
-Usuarios válidos para ingresar a la APP
+#### Ejemplo de solicitd para obtener los usuarios registrados
 
 ```http
+    GET http://localhost:3001/users
 [
     {
         "id": "1",
