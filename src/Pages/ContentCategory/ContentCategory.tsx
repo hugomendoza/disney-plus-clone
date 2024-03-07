@@ -1,12 +1,28 @@
+import { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-
-import { Nav } from '@/Components'
-import { BannerCategory, CardMovie, HeaderSection, SectionCategory } from './ContentCategory.styles'
+import { useGetMovieByCategory } from '@/hooks'
+import { Layout } from '@/Layout'
 import { NextArrow, PrevArrow } from './components/ButtonsNavSlider'
 
+import {
+  BannerCategory,
+  CardMovie,
+  HeaderSection,
+  SectionCategory
+} from './ContentCategory.styles'
+
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import { logosBrand } from '@/helpers/logosBrand'
+import { Movie } from '@/types/types'
+
 export const ContentCategory = () => {
+  const { id } = useParams()
+  const { dataCategories, getMovieByCategories } = useGetMovieByCategory()
+
+  const { logo, name, movies } = dataCategories
+
   const settings = {
     dots: false,
     infinite: false,
@@ -18,11 +34,18 @@ export const ContentCategory = () => {
     nextArrow: <NextArrow className='' onClick={() => {}} />
   }
 
+  useEffect(() => {
+    getMovieByCategories(id!)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id])
+
   return (
-    <>
-      <Nav />
+    <Layout>
       <BannerCategory>
-        <img src="https://seeklogo.com/images/D/disney-logo-9649A88458-seeklogo.com.png" alt="" />
+        <img
+          src={logosBrand[logo]}
+          alt={name}
+        />
       </BannerCategory>
 
       <SectionCategory>
@@ -30,23 +53,21 @@ export const ContentCategory = () => {
           <h2>Recien agregados</h2>
         </HeaderSection>
         <Slider {...settings}>
-          <CardMovie>
-            <img src="https://seeklogo.com/images/D/disney-logo-9649A88458-seeklogo.com.png" alt="" />
-          </CardMovie>
-          <CardMovie>
-            <img src="https://seeklogo.com/images/D/disney-logo-9649A88458-seeklogo.com.png" alt="" />
-          </CardMovie>
-          <CardMovie>
-            <img src="https://seeklogo.com/images/D/disney-logo-9649A88458-seeklogo.com.png" alt="" />
-          </CardMovie>
-          <CardMovie>
-            <img src="https://seeklogo.com/images/D/disney-logo-9649A88458-seeklogo.com.png" alt="" />
-          </CardMovie>
-          <CardMovie>
-            <img src="https://seeklogo.com/images/D/disney-logo-9649A88458-seeklogo.com.png" alt="" />
-          </CardMovie>
+          {
+            movies?.map(({id, image, title}:Movie) => (
+              <CardMovie
+                to={`/movie/${id}`}
+                key={id}
+              >
+                <img
+                  src={image}
+                  alt={title}
+                />
+              </CardMovie>
+            ))
+          }
         </Slider>
       </SectionCategory>
-    </>
+    </Layout>
   )
 }

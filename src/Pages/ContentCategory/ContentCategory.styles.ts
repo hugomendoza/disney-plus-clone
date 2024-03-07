@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const BannerCategory = styled.main.attrs({
@@ -7,6 +8,10 @@ export const BannerCategory = styled.main.attrs({
   display: grid;
   place-items: center;
   margin-bottom: 1.5rem;
+  
+  img {
+    width: 10rem;
+  }
 `
 
 export const SectionCategory = styled.section.attrs({
@@ -53,7 +58,7 @@ export const HeaderSection = styled.header.attrs({
   margin-bottom: 1.5rem;
 `
 
-export const CardMovie = styled.a.attrs({
+export const CardMovie = styled(Link).attrs({
   className: 'CardMovie'
 })`
   aspect-ratio: 16 / 9;

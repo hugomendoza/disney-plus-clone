@@ -23,7 +23,7 @@ export const AppRouter = () => {
           : (
             <>
               <Route path='/' element={<HomePage />} />
-              <Route path='/brand/:slug' element={<ContentCategory />} />
+              <Route path='/brand/:id' element={<ContentCategory />} />
               <Route path='/movie/:id' element={<ContentDetails />} />
               <Route path='/*' element={<Navigate to='/' />} />
             </>

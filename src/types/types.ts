@@ -41,3 +41,11 @@ export interface LoadContentState {
   categories: Category[];
   movies: Movie[];
 }
+
+export interface MoviesByCategory {
+  id: string;
+  name: string;
+  slug: string;
+  logo: string;
+  movies: Movie[];
+}

@@ -1,18 +1,12 @@
 import { useEffect } from 'react'
 import { useAppSelector, useStoreData } from '@/hooks'
+import { logosBrand } from '@/helpers/logosBrand'
 import { Layout } from '@/Layout'
 import {
   Hero
 } from '@/Components'
 import { CardCategory, HomeSection, WrapperCards } from './HomePage.styles'
 
-import {
-  disney,
-  marvel,
-  nationalGeographic,
-  pixar,
-  starWars
-} from '@/assets/img'
 import { Category } from '@/types/types'
 
 export const HomePage = () => {
@@ -21,14 +15,6 @@ export const HomePage = () => {
   const { categories } = useAppSelector(state => state.categories)
 
   const showCategories = categories?.filter(cat => allowedCategories?.includes(cat.id!))
-
-  const logosCat = {
-    disney,
-    marvel,
-    pixar,
-    starWars,
-    nationalGeographic
-  } as Record<string, string>
 
   useEffect(() => {
     startLoadingContent()
@@ -43,9 +29,9 @@ export const HomePage = () => {
           {showCategories?.map(({id, logo='disney'}:Category) => (
             <CardCategory
               key={id}
-              to={`/category/${id}`}
+              to={`/brand/${id}`}
             >
-              <img src={logosCat[logo]} />
+              <img src={logosBrand[logo]} />
             </CardCategory>
           ))}
         </WrapperCards>

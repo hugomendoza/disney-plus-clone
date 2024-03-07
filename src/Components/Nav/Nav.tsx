@@ -8,9 +8,13 @@ import {
   WrapperLinks,
   WrapperZoneUser
 } from './Nav.styles'
+import { useAppSelector } from '@/hooks'
 
 export const Nav = () => {
+  const { user } = useAppSelector(state => state.auth)
   const [showButton, setShowButton] = useState<boolean>(false)
+
+  const {avatar, name} = user
 
   return (
     <StyledNav>
@@ -34,11 +38,11 @@ export const Nav = () => {
         onClick={() => setShowButton(!showButton)}
       >
         <AvatarZone>
-          <span>Huginho</span>
+          <span>{name}</span>
           <AvatarImage>
             <img
-              src="https://randomuser.me/api/portraits/lego/2.jpg"
-              alt=""
+              src={avatar}
+              alt={name}
             />
           </AvatarImage>
         </AvatarZone>
