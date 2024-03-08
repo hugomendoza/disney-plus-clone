@@ -39,11 +39,12 @@ El usuario puede hacer login usando su correo y contraseña, al ingresar se le m
 
 
 ```bash
-    https://github.com/hugomendoza/disney-plus-clone.git
+    git clone https://github.com/hugomendoza/disney-plus-clone.git
     cd disney-plus-clone
     npm install
     npm run dev
 ```
+
 ```npm
     "dev:api": "json-server --watch db.json --middlewares ./node_modules/json-server-auth --port 3001",
     "dev:vite": "vite",
@@ -173,9 +174,14 @@ GET http://localhost:3001/movies/1
 
 * [ ]  Hacer que el sitio sea adaptativo a dispositivos móviles
 * [ ]  Utilizar servicios como Firebase o Supabase para almacenar la data
-* [ ]  En la página de categorías utilizar elementos que ayuden a  diferenciar
+* [ ]  En la página de categorías utilizar elementos que ayuden a diferenciar cada caetgoría
 * [ ]  Agregar transiciones para mejorar la experiencia de usuario
-## Authors
+* [ ]  Para hacer la experiencia más completa hacer página de registro donde el usuario pueda seleccionar las categorias a las que quiere tener acceso, brindando información el precio de cada categoría
+* [ ]  Hacer que el estado de la aplicación pueda ser permanente
+* [ ]  Hacer validaciones de registro con JSON Token
+* [ ]  Hacer que el banner de estrenos muestre las peliculas de las categorías a las que tiene acceso
+
+## Autor
 
 - [@hugomendoza](https://github.com/hugomendoza)
 

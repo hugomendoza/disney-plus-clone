@@ -19,6 +19,7 @@ export const SectionCategory = styled.section.attrs({
 })`
   width: 90%;
   margin-inline: auto;
+  padding-bottom: 3.5rem;
 
   .slick-slider {
     position: relative;
