@@ -1,7 +1,7 @@
 
 # Disney App Clone
 
-Projecto inspirado en la app de streaming de Disney Plus.
+Projecto inspirado en la app de streaming de Disney Plus, esta desarrollada usando `React con TypeScript usando Vite` 
 
 El usuario puede hacer login usando su correo y contraseña, al ingresar se le mostraran las categorias a las que tiene acceso junto con carrusel que muestra los estrenos de la plataforma.
 
